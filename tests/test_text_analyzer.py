@@ -11,7 +11,7 @@ class TextAnalyzerTest(unittest.TestCase):
         stats = analyze_text("Ala ma kota. Ala lubi Python!")
 
         self.assertEqual(stats["characters_with_spaces"], 29)
-        self.assertEqual(stats["characters_without_spaces"], 25)
+        self.assertEqual(stats["characters_without_spaces"], 24)
         self.assertEqual(stats["word_count"], 6)
         self.assertEqual(stats["sentence_count"], 2)
         self.assertEqual(stats["longest_word"], "python")
